@@ -14,16 +14,17 @@ data_x = np.arange(left, right, step)
 data_y = [my_func(x, a, b, c, d) for x in data_x]
 plt.plot(data_x, data_y, linewidth = 2, color='#00ff00')
 
-
 left = 4.5; right = 5.5; step = 0.5
 data_x = np.arange(left, right, step)
 data_y = [my_func(x, a, b, c, d) for x in data_x]
-plt.plot(data_x, data_y, linewidth = 2, color='#e6e600')
+plt.plot(data_x, data_y, linewidth = 2, color='#994d00')
 
 left = 5.5; right = 100; step = 0.5
 data_x = np.arange(left, right, step)
 data_y = [my_func(x, a, b, c, d) for x in data_x]
 plt.plot(data_x, data_y, linewidth = 2, color='#9933ff')
+
+
 
 data_x = []; data_y = []
 pos_x = 0
