@@ -17,7 +17,7 @@ def read_line_2_16(): #  Проверка на схожесть 1 или 6
 			if line_2[i] == '#' and line_2[i+1] == '#':
 				print('1', end='')
 				a += 2
-			if line_2[i] == '.' and line_2[i+1] == '#':
+			if line_2[i] == '#' and line_2[i+1] == '.':
 				print('6', end='')
 				a += 2
 
