@@ -1,10 +1,10 @@
-line = input()
-line = map(int, line.split())
-line_reverse = []
+a = input()
+a = a.split()
 ma = 0
-
-for i in line:
-	ma = max(line) #maximum
-	line_reverse.append(ma)
-	line.pop(line.index(max(line)))
-print(*line_reverse)
+b = []
+a = list(map(int, a))
+while len(a) > 0:
+	ma = (max(a)) #  maximum
+	b.append(ma)
+	a.remove(max(a))
+print(*b)
