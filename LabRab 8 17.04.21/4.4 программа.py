@@ -15,7 +15,7 @@ cur.execute(sql)
 rows = cur.fetchall()
 
 for row in rows:
-    print(f'name = {row["nameStud"]}, rating = {row["rating"]}, gender = {row["gender"]}, date = {row["rating"]}, city = {row["city"]}')
+    print(f'name = {row["nameStud"]}, rating = {row["rating"]}, gender = {row["gender"]}, date = {row["date"]}, city = {row["city"]}')
   #В задании надо было вывести ВСЕХ студентов, а не их имена, так что я просто вывел всю информацию о них.
 
 conn.close()
