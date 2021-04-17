@@ -1,16 +1,16 @@
 import pymysql.cursors
 
 conn = pymysql.connect(
-	host='pgsha.ru',
-	user='soft0028',
-	password='iPjXAp8m',
-	db='soft0028_labrab_8',
-	port=35006,
-	cursorclass=pymysql.cursors.DictCursor)
+	host = 'pgsha.ru',
+	user = 'soft0028',
+	password = 'iPjXAp8m',
+	db = 'soft0028_labrab_8',
+	port = 35006,
+	cursorclass = pymysql.cursors.DictCursor)
 
 cur = conn.cursor()
 
-sql = "SELECT `nameStud`, `rating`, `city` FROM `Students` ORDER BY `city` ASC AND `rating` DESC"
+sql = "SELECT `nameStud`, `rating`, `city` FROM `Students` ORDER BY `city` ASC, `rating` DESC"
 cur.execute(sql)
 rows = cur.fetchall()
 
