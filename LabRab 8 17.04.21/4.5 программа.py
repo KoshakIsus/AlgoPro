@@ -10,7 +10,7 @@ conn = pymysql.connect(
 
 cur = conn.cursor()
 
-sql = "SELECT `nameStud`, `rating`, `city` FROM `Students` ORDER BY `city` ASC, `rating` DESC"
+sql = "SELECT `nameStud`, `rating`, `city` FROM `Students` ORDER BY `city` ASC AND `rating` DESC"
 cur.execute(sql)
 rows = cur.fetchall()
 
