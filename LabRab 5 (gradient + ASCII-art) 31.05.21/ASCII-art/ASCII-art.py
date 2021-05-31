@@ -55,7 +55,7 @@ def invert_sides_UD(result):  # отражение по вертикали (вв
          picture = fr2.read()
          for x in range(len(picture)):
             for y in range(len(picture)-1, 0, -1):
-               fw2.write(picture[x][y])
+               fw2.write(picture[y][x])
          #fr2.close()
          #fw2.close()
 
